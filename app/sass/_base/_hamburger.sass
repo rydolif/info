@@ -1,0 +1,77 @@
+.hamburger
+	position: relative
+	height: 55px
+	width: 60px
+	background-color: #fff
+	padding: 0
+	border: 1px solid #fff
+	transition: all .3s
+	opacity: .7
+	&:focus
+		outline: none
+		opacity: 1
+		cursor: pointer
+	&:hover
+		outline: none
+		opacity: 1
+		cursor: pointer
+
+	&__box
+		position: absolute
+		left: 48%
+		top: 61%
+		height: 55px
+		width: 60px
+		transform: translate(-50%, -50%)
+		display: inline-block
+		perspective: 80px
+
+	&__item
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		width: 24px
+		height: 3px
+		background-color: #0f0f0f
+		transition: all .2s
+
+		&::before
+			content: ""
+			display: block
+			position: absolute
+			left: 0
+			top: -7px
+			background-color: #0f0f0f
+			width: 27px
+			height: 3px
+			transition: transform 0s 0.1s
+
+		&::after
+			content: ""
+			display: block
+			position: absolute
+			left: 0
+			top: -14px
+			background-color: #0f0f0f
+			width: 30px
+			height: 3px
+			transition: transform 0s 0.1s
+
+	&-active
+		z-index: 1001
+		.hamburger__box
+			left: 37%
+			top: 55%
+
+		.hamburger__item
+			background-color: transparent
+			transform: rotateY(180deg)
+			&::before
+				transform: translate3d(0, 3px, 0) rotate(45deg)
+				width: 30px
+			&::after
+				transform: translate3d(0, 10px, 0) rotate(-45deg)
+				width: 30px
+
+

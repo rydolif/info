@@ -1,0 +1,562 @@
+//--------------------max-height---------------------
+@media only screen and (max-height : 1100px)
+	html
+		overflow-y: auto
+
+	.header--content
+		align-items: flex-start
+
+
+	.main
+		padding: 150px 0 150px 0
+		&--page
+			padding: 0
+			height: auto
+
+	.footer
+		bottom: 10px
+		position: fixed
+
+@media only screen and (max-height : 800px)
+	.main
+		position: relative
+		height: 100%
+
+	.footer
+		position: absolute
+
+
+//--------------------max-width---------------------
+@media only screen and (max-width : 1200px)
+	.financing-content
+		&__text
+			column-gap: 50px
+
+		blockquote
+			padding-left: 60px
+
+
+	.header
+		&__logo
+			a
+				font-size: 20px
+			img
+				margin-right: 15px
+
+		&__block
+			a
+				font-size: 18px
+		&__call
+			margin-right: 15px
+
+		&--content
+			padding-top: 100px
+			text-align: center
+			align-items: flex-start
+			height: auto
+
+			h1
+				margin-top: 0
+
+	.circle
+		width: 100%
+		height: 600px
+		top: 0
+		margin-top: 50px
+
+	.nav
+		top: 80px
+		padding-top: 40px
+		padding-bottom: 40px
+		overflow: auto
+	
+	.main
+		padding: 100px 0
+		height: auto
+	
+		&--page
+			padding: 0
+
+	.circle
+		right: 0
+
+		&__top
+			img
+				left: 50%
+				transform: translate(-50%, 0)
+
+			span
+				left: 50%
+
+			svg
+				left: 50%
+				transform: translate(-50%, 0)
+
+
+		&__center
+			top: 210px
+
+			img
+				position: relative
+
+			.active
+				display: none
+
+			a
+				&:hover
+					img
+						display: none
+
+					.active
+						display: block
+
+			&_left
+				left: 18%
+
+			&_center
+				left: 41.8%
+				top: 3px
+
+			&_right
+				left: 57%
+
+		&__bottom
+			left: 0
+			top: 370px
+
+			img
+				position: absolute
+				left: 31%
+
+			svg
+				left: 45%
+
+			span
+				left: 42%
+
+			.active
+				top: 5px
+				left: 50%
+				transform: translate(-50%, 0)
+
+	.footer
+		position: absolute
+		&--page
+			&__content
+				div
+					margin-right: 15px
+
+		&__copy
+			width: 65%
+
+
+@media only screen and (max-width : 992px)
+	.sentence-content
+		padding-bottom: 30px
+		&--price
+			text-align: left
+
+		li
+			margin-bottom: 20px
+
+		iframe
+			margin: 0
+			width: 100%
+
+		p
+			margin: 0 0 15px 0
+
+		.video__title
+			margin-bottom: 20px
+
+	.financing-content
+		padding-top: 60px
+		&__text
+			columns: 1
+
+		blockquote
+			padding: 0 50px
+
+	h2
+		font-size: 30px
+		margin-bottom: 25px
+
+	iframe
+		margin: 0
+
+	.footer--page
+		text-align: center
+		&__content
+			flex-wrap: wrap
+			div
+				width: 48%
+				margin-bottom: 20px
+				margin-right: 0
+
+	.header
+		&__logo
+			p
+				font-size: 14px
+
+			img
+				margin-right: 10px
+				width: 55px
+				height: 55px
+
+		&__call
+			display: none
+
+		&__download
+			margin-right: 15px
+
+		&--content
+			&__sub-title
+				margin-bottom: 10px
+
+			&__text
+				margin-bottom: 25px
+	
+	.nav
+		top: 65px
+		padding-top: 20px
+		padding-bottom: 80px
+
+		ul
+			margin-bottom: 20px
+
+		.header__call
+			display: block
+			margin-bottom: 10px
+			a
+				line-height: 1
+				font-size: 18px
+
+		.header__download
+			display: block
+
+			br
+				display: none
+
+	.circle
+		&__center
+			&_left
+				left: 7%
+
+			&_right
+				left: 59%
+
+			&_center
+				left: 38.5%
+
+		&__bottom
+			img
+				left: 50%
+				transform: translate(-50%, 0)
+
+			span
+				left: 50%
+				transform: translate(-50%, 0)
+
+
+			svg
+				left: 50%
+				transform: translate(-50%, 0)
+
+	h1
+		font-size: 50px
+
+
+	.main
+		&--page
+			text-align: center
+
+	#thanks
+		padding: 40px
+
+	.modal
+		width: 320px
+		padding: 40px
+
+
+@media only screen and (max-width : 767px)
+	.video
+		display: none
+
+	.header
+		&__download
+			display: none
+
+		&--content
+			padding-top: 0
+			height: 1060px
+
+	.circle
+		&__center
+			&_left
+				left: -9%
+
+			&_right
+				left: 63%
+
+			&_center
+				left: 34.5%
+
+		&__bottom
+			img
+				left: 50%
+				top: 0
+				transform: translate(-50%, 0)
+
+			.active
+				left: 50%
+				top: 5px
+				transform: translate(-50%, 0)			
+
+
+	.footer
+		&__container
+			flex-direction: column
+			align-items: center
+			text-align: center
+	
+	.header--page
+		padding-top: 120px
+
+	.main
+		&--page
+
+			h1
+				font-size: 45px
+
+			.header--content
+				margin-bottom: 75px
+
+
+@media only screen and (max-width : 576px)
+	h2
+		font-size: 24px
+	
+	.financing-content
+		blockquote
+			padding: 0
+			font-size: 16px
+
+		iframe
+			max-height: 200px
+
+		&__title
+			padding-left: 40px
+			&::before
+				left: 0
+
+	.footer--page
+		padding-top: 100px
+		&__content
+			div
+				width: 100%
+				&:last-child
+					margin-bottom: 0
+
+
+	.header
+		padding-top: 10px
+
+		&__search
+			height: 40px
+			width: 40px
+			&::before
+				width: 15px
+				height: 15px
+
+		.hamburger
+			height: 40px
+			width: 40px
+
+			&__box
+				height: 40px
+				width: 40px
+				left: 40%
+				top: 68%
+
+			&-active
+				.hamburger__box
+					left: 27%
+					top: 60%
+
+		&__logo
+			img
+				width: 35px
+				height: 35px
+				margin-right: 5px
+
+			p
+				font-size: 10px
+				position: absolute
+				top: 50%
+				transform: translate(0, -50%)
+
+		&--content
+			padding-bottom: 50px
+			height: auto
+
+			p
+				font-size: 12px
+				br
+					display: none
+
+	h1
+		font-size: 40px
+	
+	.search-form
+		input
+			height: 40px
+
+		&--active
+			width: 90px
+
+	.circle
+		margin: 40px 0 0 0
+		top: 0
+		height: auto
+
+		img
+			display: none
+
+		svg
+			width: 30px
+			height: 30px
+			position: relative
+			left: 0
+			top: 0
+			right: 0
+			transform: translate(0, 0)
+			margin: 0 auto
+
+		span
+			position: relative
+			font-size: 12px
+			left: 0
+			top: 0
+			transform: translate(0, 0)
+			br
+				display: none
+
+		i
+			font-size: 8px
+
+		a
+			transition: all .3s
+			display: flex
+			align-items: center
+			flex-direction: column
+			&:hover
+				background-color: #e8b66c
+				border-bottom: 3px solid #9c763e
+				.active
+					display: none
+			&:focus
+				background-color: #e8b66c
+				border-bottom: 3px solid #9c763e
+				.active
+					display: none
+
+		&__top
+			background-color: #fff
+			width: 100%
+			height: 90px
+			display: block
+			border: 3px solid #e8b66c
+			padding: 15px
+			display: flex
+			align-items: center
+			flex-direction: column
+			margin-bottom: 10px
+
+		&__center
+			display: flex
+			flex-direction: column
+			top: 0
+
+			.active
+				display: none
+
+			&_left
+				position: relative
+				top: 0
+				left: 0
+				transform: translate(0, 0)
+				background-color: #fff
+				width: 100%
+				height: 90px
+				border: 3px solid #e8b66c
+				padding: 15px
+				margin-bottom: 10px
+
+			&_right
+				position: relative
+				top: 0
+				left: 0
+				transform: translate(0, 0)
+				background-color: #fff
+				width: 100%
+				height: 90px
+				display: block
+				border: 3px solid #e8b66c
+				padding: 15px
+				margin-bottom: 10px
+
+		&__bottom
+			top: 0
+			position: relative
+			top: 0
+			left: 0
+			transform: translate(0, 0)
+			background-color: #fff
+			width: 100%
+			height: 90px
+			display: block
+			border: 3px solid #e8b66c
+			padding: 20px
+
+	.main
+		padding-top: 80px
+		&--page
+			padding: 0
+
+	.nav
+		top: 55px
+
+	.btn
+		line-height: 40px
+		height: 40px
+		&::before
+			width: 33px
+			height: 33px
+
+		&::after
+			font-size: 12px
+			right: 16px
+
+
+@media only screen and (max-width : 480px)
+	h1
+		font-size: 35px
+	
+	.financing-content
+		padding-bottom: 0
+
+		iframe
+			min-height: 200px
+
+	.header--page
+		&__line
+			flex-direction: column
+
+	.main
+		&--page
+
+			h1
+				font-size: 30px
+
+			.header--content__btn
+				margin-bottom: 45px

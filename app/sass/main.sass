@@ -1,0 +1,527 @@
+@import "libs"
+@import "base"
+@import "page"
+
+.video
+	position: fixed
+	right: 0
+	bottom: 0
+	min-width: 100%
+	min-height: 100%
+
+.header
+	position: fixed
+	right: 0
+	left: 0
+	padding: 20px 0 0 0
+	transition: all .3s
+	z-index: 1001
+
+	&-active
+		background-color: rgba(0, 0, 0, .9)
+		padding: 5px 0
+
+	&-menu
+		background-color: rgba(0, 0, 0, .9)
+		padding: 5px 0
+
+	&__container
+		position: relative
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+
+	&__logo
+		display: flex
+		flex-direction: row
+		align-items: center
+		a
+			font-size: 24px
+			color: #fff
+			line-height: 1.2
+			letter-spacing: 1.3px
+
+		img
+			margin-right: 27px
+
+		span
+			margin-left: 12px
+
+	&__block
+		position: relative
+		display: flex
+		flex-direction: row
+		align-items: center
+		a
+			font-size: 18px
+			color: #fff
+			line-height: 1
+	
+	&__call
+		display: flex
+		flex-direction: column
+		margin-right: 35px
+		align-items: flex-end
+		white-space: nowrap
+
+		span
+			font-size: 14px
+			color: #e8b66c
+		
+		a
+			font-size: 24px
+
+	&__search
+		position: relative
+		display: block
+		border: 1px solid #434441
+		width: 60px
+		height: 55px
+		transition: all .3s ease
+		background-color: transparent
+		cursor: pointer
+		&::before
+			content: ""
+			background-image: url(../img/icon/search.svg)
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			width: 25px
+			height: 25px
+		&:hover
+			background-color: rgba(255, 255, 255, 1)
+			border: 1px solid rgba(255, 255, 255, 1)
+			&::before
+				background-image: url(../img/icon/search-dark.svg)
+		&:focus
+			background-color: rgba(255, 255, 255, 1)
+			border: 1px solid rgba(255, 255, 255, 1)
+			&::before
+				background-image: url(../img/icon/search-dark.svg)
+
+		&:active
+			background-color: rgba(255, 255, 255, 1)
+			border: 1px solid rgba(255, 255, 255, 1)
+			&::before
+				background-image: url(../img/icon/search-dark.svg)
+	&__download
+		margin-right: 45px
+		line-height: 1.3
+
+	&--content
+		display: flex
+		align-items: center
+		color: #fff
+		height: 85vh
+		width: 100vw
+		height: 100vh
+
+		h1
+			margin-top: 65px
+
+		p
+			font-size: 16px
+
+		&__sub-title
+			text-transform: uppercase
+			margin-bottom: 20px
+		
+		&__text
+			margin-bottom: 37px
+	
+	.focus
+		background-color: #fff
+		border: 1px solid #fff
+		&::before
+			background-image: url(../img/icon/search-dark.svg)
+
+.nav
+	position: fixed
+	display: block
+	width: 320px
+	height: 100%
+	flex-direction: column
+	right: -100%
+	top: 81px
+	z-index: -1
+	background: rgba(0, 0, 0, .9)
+	transition: all .3s
+	padding: 40px
+
+	ul
+		display: flex
+		flex-direction: column
+		justify-content: center
+		margin-bottom: 40px
+		list-style-type: none
+
+	li
+		margin: 0
+		margin-bottom: 10px
+
+	a
+		color: #fff
+		display: block
+		&:hover
+			color: $white
+			text-decoration: none
+			&::before
+				transform: scale(1)
+
+		&:focus
+			color: $white
+			text-decoration: none
+			&::before
+				transform: scale(1)
+
+	&-active
+		right: 0
+	
+	.header__call
+		display: none
+
+	.header__download
+		display: none
+
+.circle
+	position: relative
+	right: 3.5%
+	height: 600px
+	a
+		&:hover
+			background-color: transparent
+			svg
+				fill: #fff
+			span, i
+				color: #fff
+			.active
+				opacity: 1
+
+		&:focus
+			background-color: transparent
+			svg
+				fill: #fff
+			span, i
+				color: #fff
+			.active
+				opacity: 1
+
+	svg
+		position: absolute
+		fill: #e8b66c
+		transition: all .3s ease
+
+	i
+		color: #e8b66c
+		margin-left: 7px
+		font-size: 14px
+
+	span
+		position: absolute
+		font-size: 24px
+		color: #e8b66c
+		transition: all .3s ease
+
+		svg
+			position: initial
+			display: inline
+			margin-left: 12px
+	
+	.active
+		opacity: 0
+		transition: all .8s
+
+	&__top
+		position: relative
+		display: block
+
+		img
+			position: absolute
+			right: 0
+
+		svg
+			left: 53%
+			top: 55px
+
+		span
+			left: 58%
+			transform: translate(-50%, 0)
+			top: 140px
+
+	&__center
+		position: relative
+		top: 217px
+
+		img
+			position: absolute
+
+		a
+			display: block
+
+		&_center
+			position: absolute
+			width: 160px
+			height: 160px
+			left: 308px
+			top: 2px
+
+		&_left
+			position: absolute
+			left: 85px
+			top: -5px
+			width: 235px
+			height: 325px
+
+			svg
+				left: 32%
+				top: 90px
+
+			span
+				top: 165px
+				left: 55px
+
+			.active
+				top: 3px
+
+		&_right
+			position: absolute
+			left: 453px
+			width: 235px
+			height: 325px
+
+			svg
+				left: 32%
+				top: 90px
+
+			span
+				top: 170px
+				left: 65px
+				line-height: 1.3
+
+			.active
+				top: -3px
+				left: 1px
+
+	&__bottom
+		position: relative
+		top: 380px
+		left: 31%
+		display: block
+
+		img
+			position: absolute
+
+		.active
+			top: 5px
+			left: -2px
+
+		svg
+			left: 20%
+			top: 65px
+
+		span
+			top: 150px
+			left: 16%
+
+.search-form
+	width: 0
+	opacity: 0
+	transition: all .3s
+	display: block
+	input
+		width: 100%
+		height: 55px
+		border: none
+		padding: 0 10px
+
+	&--active
+		width: 150px
+		opacity: 1
+		input
+			width: 100%
+
+	&--hide
+		width: 0
+		opacity: 0
+
+.main
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	height: 100vh
+
+.footer
+	position: fixed
+	right: 0
+	left: 0
+	bottom: 0
+	bottom: 30px
+
+	&__container
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+
+	a, i, p
+		color: rgba(255, 255, 255, .6)
+
+	a
+		&:hover
+			color: rgba(255, 255, 255, .6)
+			text-decoration: underline
+		&:focus
+			color: rgba(255, 255, 255, .6)
+			text-decoration: underline
+
+	&__soc
+		display: flex
+		flex-direction: row
+		align-items: center
+
+		&_line
+			width: 60px
+			height: 1px
+			background: #b9b9b9
+			margin-right: 20px
+
+		i
+			margin-right: 20px
+			transition: all .3s
+
+		a
+			&:hover
+				i
+					color: $text
+			&:focus
+				i
+					color: $text
+	&__copy
+		width: 50%
+		font-size: 12px
+
+	&--page
+		padding-top: 120px
+		padding-bottom: 40px
+		position: relative
+		background-repeat: no-repeat
+		background-position: top
+
+		&__content
+			display: flex
+			justify-content: space-between
+			padding-bottom: 35px
+
+			li
+				margin-bottom: 5px
+
+			a
+				color: $text
+
+
+		&__container
+			a, i, p
+				color: #b9b9b9
+
+			a
+				&:hover
+					color: #212121
+					text-decoration: underline
+				&:focus
+					color: #212121
+					text-decoration: underline
+
+.header
+	&--page
+		padding-top: 180px
+		padding-bottom: 45px
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		font-size: 14px
+
+		&__line
+			display: flex
+			justify-content: space-between
+			align-items: center
+		
+			div
+				a
+					color: #fff
+
+		span
+			color: #fff
+
+	&--sentence
+		&__download
+			margin-right: 25px
+
+.main--page
+	padding: 0
+
+	h1
+		font-size: 60px
+		font-weight: 400
+		letter-spacing: 0
+		margin-bottom: 10px
+
+	p
+		margin-bottom: 15px
+
+	.header--content__btn
+		margin-bottom: 110px
+
+.dark
+	color: #212121
+
+
+iframe
+	height: 300px
+	width: 95%
+	margin-left: 5%
+	margin-bottom: 22px
+
+blockquote
+	position: relative
+	padding: 55px 0 0 100px
+	font-size: 18px
+	line-height: 1.5
+	z-index: 1
+	&:before
+		content: url(../img/icon/blockquote.svg)
+		position: absolute
+		left: 70px
+		top: 35px
+		width: 95px
+		height: 70px
+		z-index: -1
+		transform: rotate(180deg)
+
+.video__title
+	position: relative
+	padding-left: 80px
+	color: $text
+	font-weight: 700
+	margin-bottom: 0
+	&::before
+		content: ""
+		position: absolute
+		left: 30px
+		top: 10px
+		width: 30px
+		height: 1px
+		background-color: $accent
+
+.map
+	padding: 70px 0
+
+#map
+	height: 520px
+
+.gm-style
+	img
+		width: 27px
+		height: 37px
+
+@import "media" // Always at the end

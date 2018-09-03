@@ -1,0 +1,90 @@
+.btn
+	position: relative
+	display: inline-block
+	height: 55px
+	border: none
+	outline: none
+	padding: 0 75px 0 30px
+	border-radius: 40px
+	background: linear-gradient(to bottom, #e9c375, #cf9a4c)
+	text-align: center
+	font-size: 18px
+	color: #fff
+	line-height: 55px
+	font-weight: 700
+	box-shadow: 0 10px 30px rgba(230, 157, 53, .4)
+	transition: all .3s
+
+	&:hover
+		outline: none
+		border: none
+		text-decoration: none
+		cursor: pointer
+		box-shadow: 0 15px 30px rgba(230, 157, 53, .4)
+		color: #fff
+		background: linear-gradient(to bottom, #e9c375, #e9c375)
+		&::before
+			background: linear-gradient(to top, #cf9a4c, #e9c375)
+
+
+	&:focus
+		outline: none
+		border: none
+		text-decoration: none
+		cursor: pointer
+		box-shadow: 0 15px 30px rgba(230, 157, 53, .4)
+		color: #fff
+		background: linear-gradient(to bottom, #cf9a4c, #cf9a4c)
+		&::before
+			background: linear-gradient(to top, #cf9a4c, #e9c375)
+
+	&::before
+		content: ""
+		position: absolute
+		right: 7px
+		top: 50%
+		transform: translate(0, -50%)
+		background: linear-gradient(to top, #e9c375, #cf9a4c)
+		width: 45px
+		height: 45px
+		border-radius: 100%
+		transition: all .3s
+
+	&::after
+		content: url(../img/icon/arrow.svg)
+		position: absolute
+		width: 15px
+		height: 15px
+		right: 22px
+		top: 4px
+		transition: all .3s
+	
+	&--back
+		background: transparent
+		border: 1px solid #e8b66c
+		transition: all .3s
+		padding: 0 30px
+		height: 40px
+		line-height: 40px
+		font-size: 14px
+		text-transform: uppercase
+		font-weight: 400
+		color: #e8b66c
+		fill: #e8b66c
+		box-shadow: none
+		&::before
+			display: none
+		&::after
+			display: none
+
+		&:hover
+			fill: #fff
+			border: 1px solid #e8b66c
+		&:focus
+			fill: #fff
+			border: 1px solid #e8b66c
+
+		svg
+			transform: rotate(180deg)
+			margin-right: 10px
+

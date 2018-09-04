@@ -1,10 +1,5 @@
 $(function() {
 
-//------------------------------видео на фон-----------------------------
-  $(function(){
-    $(".player").YTPlayer();
-  });
-
 //------------------------------пошук-----------------------------
   $('.header__search').click(function() {
     $('.search-form').toggleClass('search-form--active');

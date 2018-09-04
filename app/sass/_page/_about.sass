@@ -1,0 +1,44 @@
+.about-content
+	padding-top: 90px
+	padding-bottom: 50px
+	
+	&--two
+		padding-bottom: 80px
+		p
+			margin-left: 30px
+
+		img
+			width: 96%
+
+	&__list
+		padding-top: 50px
+		display: flex
+		flex-wrap: wrap
+		background-image: url(../img/about-bg.png)
+		background-position: 30px
+		background-repeat: no-repeat
+		background-size: contain
+		font-size: 16px
+		color: #212121
+		font-weight: 700
+
+	&__item
+		width: 60%
+		&:nth-child(even)
+			width: 40%
+
+	&__namber
+		position: relative
+		background: linear-gradient(to bottom, #e9c375, #cf9a4c)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		font-size: 48px
+		&::before
+			content: ""
+			position: absolute
+			bottom: 10px
+			height: 1px
+			width: 100%
+			background-color: $accent
+
+

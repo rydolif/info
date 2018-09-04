@@ -148,26 +148,29 @@
 	</main>
 
 	<!-- 	modal -->
-	<div class="modal" id="search-open">
-		<div class="wrapper">
-			<form action="sendmail.php" class="form" method="post">
+		<div class="modal" id="order">
+			<div class="wrapper">
+				<form action="sendmail.php" class="form" method="post">
 
-				<button class="close search-open_close" type="button"></button>
+					<button class="close order_close" type="button"></button>
 
-				<h3>Поиск по сайту</h3>
-				<input type="hidden" name="subject" value="Узнать подробнее!">
-				<div class="footer__form_line"><input type="text" name="name" placeholder="Имя" required></div>
-			</form>
+					<h2>Заказать звонок</h2>
+					<input type="hidden" name="subject" value="Заказать звонок">
+					<div><input type="text" name="name" placeholder="Имя" required></div>
+					<div><input type="tel" name="phone" placeholder="Телефон" required></div>
+					<div><button type="submit" class="btn footer__form_btn" name="submit" value="отправить">Заказать</button></div>
+				</form>
+			</div>
 		</div>
-	</div>
 
-	<div class="modal" id="thanks">
-		<button class="close thanks_close" type="button"></button>
+		<div class="modal" id="thanks">
+			<button class="close thanks_close" type="button"></button>
 
-		<h3>Спасибо <br>за доверие!</h3>
-		<p>Мы обязательно с вами свяжемся!</p>
-	</div>
+			<h2>Спасибо <br>за доверие!</h2>
+			<p>Мы обязательно с вами свяжемся!</p>
+		</div>
 	<!-- 	modal end-->
+
 
 	<script src="js/scripts.min.js"></script>
 

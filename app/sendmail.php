@@ -1,5 +1,5 @@
 <?php
-	$SITE_TITLE = 'LeoLoft';
+	$SITE_TITLE = 'Корпорация Городских Концессий';
 	$SITE_DESCR = '';
 
 	if ( isset($_POST) ) {
@@ -10,7 +10,7 @@
 		$subject = $_POST['subject'] ? htmlspecialchars(trim($_POST['subject'])) : '';
 		$comment = isset($_POST['comment']) ? htmlspecialchars(trim($_POST['comment'])) : '';
 		$question = isset($_POST['question']) ? htmlspecialchars(trim($_POST['question'])) : '';
-		$to = 'rudolifrudolif@gmail.com';
+		$to = 'Elena357910@yandex.com';
 
 		$headers = "From: $SITE_TITLE \r\n";
 		$headers .= "Reply-To: ". $email . "\r\n";

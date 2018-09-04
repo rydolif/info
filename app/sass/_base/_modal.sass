@@ -7,21 +7,21 @@
 	background-color: #fff
 	z-index: 1
 
-	label.error
-		position: absolute
-		top: -20px
-		right: 0
-		left: 0
-		transition: all .3s
-		animation: error .3s linear 1 forwards
-		color: red
+	h2
 		text-align: center
-		font-weight: 400
+		font-size: 30px
+		&::before
+			left: 50%
+			transform: translate(-50%, 0)
+
+	h3
+		text-align: center
+
+	p
+		text-align: center
 
 	.btn
 		width: 100%
-		padding: 18px 0
-		font-size: 12px
 
 	.close
 		position: absolute

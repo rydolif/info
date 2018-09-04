@@ -1,0 +1,140 @@
+.articles-content
+	padding: 90px 0
+
+	h3
+		font-size: 24px
+		line-height: 1.1
+		margin-bottom: 10px
+
+	&__title
+		transition: all .3s
+		color: #000b40
+		&:hover
+			text-decoration: underline
+			color: #000b40
+		&:focus
+			text-decoration: underline
+			color: #000b40
+
+		h3
+			color: #000b40
+	img
+		width: 300px
+		height: 200px
+		margin-right: 40px
+		box-shadow: 0 15px 20px rgba(0, 0, 0, .1)
+		transition: all .3s
+		&:hover
+			box-shadow: 0 15px 20px rgba(0, 0, 0, .2)
+		&:focus
+			box-shadow: 0 15px 20px rgba(0, 0, 0, .2)
+
+	svg
+		fill: #e8b66c
+		transition: all .3s
+		margin-left: 10px
+	
+	.time
+		color: #acb6bf
+		font-size: 14px
+
+	p
+		color: #4c4c4c
+		font-size: 16px
+		margin-bottom: 30px
+		line-height: 1.5
+	
+	&__new
+		&_item
+			display: flex
+			padding-bottom: 35px
+			margin-bottom: 40px
+			border-bottom: 1px solid #e6e6e6
+			&:nth-child(3)
+				margin-bottom: 50px
+
+		&_info
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			line-height: 1
+
+		&_more
+			text-transform: uppercase
+			color: $accent
+			font-size: 12px
+			font-weight: 700
+			letter-spacing: .5px
+			&:hover
+				color: #cf9a4c
+				&::before
+					background: #cf9a4c
+				svg
+					fill: #cf9a4c
+			&:focus
+				color: #cf9a4c
+				&::before
+					background: #cf9a4c
+				svg
+					fill: #cf9a4c
+
+	&__pagination
+		text-align: center
+		font-size: 16px
+		color: #999
+		
+		svg
+			margin: 0
+			fill: #999
+
+		a
+			color: #999
+			&:first-child
+				svg
+					transform: rotate(180deg)
+			&:hover
+				color: $accent
+				svg
+					fill: $accent
+			&:focus
+				color: $accent
+				svg
+					fill: $accent
+
+		span, a
+			margin-right: 10px
+
+		span
+			color: $accent
+	
+	&__interesting
+		background: #fafafa
+		padding: 40px 15px 0 15px
+
+		h3
+			padding: 0 10px 0 10px
+			margin-bottom: 25px
+			font-size: 20px
+		
+		.time
+			font-size: 12px
+
+		&_item
+			padding: 0 10px 20px 10px
+			margin-bottom: 30px
+			border-bottom: 1px solid #e6e6e6
+			&:last-child
+				margin-bottom: 0
+				border: none
+
+			a
+				display: block
+				font-size: 16px
+				line-height: 1.4
+				color: $text
+				&:hover
+					text-decoration: underline
+				&:focus
+					text-decoration: underline
+
+

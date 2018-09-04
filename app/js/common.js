@@ -90,7 +90,7 @@ $(window).on('load', function(){
   'use strict';
 
   var file     = 'img/symbols.html',
-      revision = 1;
+      revision = 1.4;
 
   if( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
       return true;

@@ -105,9 +105,14 @@
 			border: 1px solid rgba(255, 255, 255, 1)
 			&::before
 				background-image: url(../img/icon/search-dark.svg)
+
 	&__download
 		margin-right: 45px
 		line-height: 1.3
+		&:hover
+			text-decoration: underline
+		&:focus
+			text-decoration: underline
 
 	&--content
 		display: flex
@@ -162,7 +167,6 @@
 
 	a
 		color: #fff
-		display: block
 		&:hover
 			color: $white
 			text-decoration: none
@@ -234,6 +238,11 @@
 	.active
 		opacity: 0
 		transition: all .8s
+		transition-property: opacity;
+	
+	.off
+		transition-delay: 0.5s
+		transition-property: opacity;
 
 	&__top
 		position: relative
@@ -241,12 +250,10 @@
 		&:hover
 			.off
 				opacity: 0
-				transition-delay: 0.3s
+				
 		&:focus
 			.off
 				opacity: 0
-				transition-delay: 0.3s
-
 
 		img
 			position: absolute
@@ -330,8 +337,8 @@
 
 		.active
 			top: 3.5px
-			left: -8px
-			width: 363px
+			left: -11px
+			width: 370px
 			height: 216px
 
 		svg

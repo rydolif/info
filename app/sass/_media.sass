@@ -174,8 +174,8 @@
 				left: 42%
 
 			.active
-				top: 5px
-				left: 280px
+				top: 4px
+				left: 281px
 
 	.footer
 		position: absolute
@@ -189,13 +189,14 @@
 
 
 @media only screen and (max-width : 992px)
+	.section
+		padding-top: 60px
+		padding-bottom: 40px
+
 	.video__title
 		text-align: left
 
 	.articles-content
-		padding-top: 60px
-		padding-bottom: 40px
-
 		h3
 			font-size: 20px
 
@@ -209,9 +210,6 @@
 			margin-bottom: 40px
 
 	.project-content
-		padding-top: 60px
-		padding-bottom: 40px
-
 		&__list
 			justify-content: center
 
@@ -219,8 +217,6 @@
 			width: 50%
 
 	.about-content
-		padding-top: 60px
-
 		&--two
 			img
 				margin-bottom: 20px
@@ -259,7 +255,6 @@
 
 
 	.sentence-content
-		padding-bottom: 30px
 		&--price
 			text-align: left
 
@@ -277,7 +272,6 @@
 			margin-bottom: 20px
 
 	.financing-content
-		padding-top: 60px
 		&__text
 			columns: 1
 
@@ -356,6 +350,23 @@
 				left: 38.5%
 
 		&__bottom
+			.off
+				transition: .0s
+
+			&:hover
+				.off
+					transition-delay: 0s
+					transition: .0s
+					opacity: 0
+				.active
+					transition: .0s
+			&:focus
+				.off
+					transition-delay: 0s
+					transition: .0s
+					opacity: 0
+				.active
+					transition: .0s
 			img
 				left: 50%
 				transform: translate(-50%, 0)
@@ -447,9 +458,8 @@
 				transform: translate(-50%, 0)
 
 			.active
-				left: 50%
-				top: 5px
-				transform: translate(-50%, 0)			
+				top: 4px
+				left: 254px		
 
 
 	.footer
@@ -488,7 +498,8 @@
 		input
 			line-height: 40px
 			height: 40px
-
+			&::placeholder
+				line-height: 40px
 	.btn
 		line-height: 40px
 		height: 40px
@@ -506,7 +517,6 @@
 		height: 300px
 	
 	.contacts-content
-		padding-top: 60px
 		&::before
 			display: none
 

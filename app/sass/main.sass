@@ -228,6 +228,9 @@
 			display: inline
 			margin-left: 12px
 	
+	img
+		transition: all .8s
+
 	.active
 		opacity: 0
 		transition: all .8s
@@ -235,6 +238,15 @@
 	&__top
 		position: relative
 		display: block
+		&:hover
+			.off
+				opacity: 0
+				transition-delay: 0.3s
+		&:focus
+			.off
+				opacity: 0
+				transition-delay: 0.3s
+
 
 		img
 			position: absolute
@@ -282,7 +294,10 @@
 				left: 55px
 
 			.active
-				top: 3px
+				top: 4px
+				left: 2px
+				height: 317px
+
 
 		&_right
 			position: absolute
@@ -300,8 +315,9 @@
 				line-height: 1.3
 
 			.active
-				top: -3px
-				left: 1px
+				top: -31px
+				left: 10px
+				transform: rotate(216deg)
 
 	&__bottom
 		position: relative
@@ -313,8 +329,10 @@
 			position: absolute
 
 		.active
-			top: 5px
-			left: -2px
+			top: 3.5px
+			left: -8px
+			width: 363px
+			height: 216px
 
 		svg
 			left: 20%
@@ -374,28 +392,6 @@
 			color: rgba(255, 255, 255, .6)
 			text-decoration: underline
 
-	&__soc
-		display: flex
-		flex-direction: row
-		align-items: center
-
-		&_line
-			width: 60px
-			height: 1px
-			background: #b9b9b9
-			margin-right: 20px
-
-		i
-			margin-right: 20px
-			transition: all .3s
-
-		a
-			&:hover
-				i
-					color: $text
-			&:focus
-				i
-					color: $text
 	&__copy
 		width: 50%
 		font-size: 12px
@@ -422,6 +418,7 @@
 			display: flex
 			justify-content: space-between
 
+
 		&__container
 			border-top: 1px solid #e6e6e6
 			padding-top: 30px
@@ -435,6 +432,33 @@
 				&:focus
 					color: #212121
 					text-decoration: underline
+
+	&__soc
+		display: flex
+		flex-direction: row
+		align-items: center
+
+		&_line
+			width: 60px
+			height: 1px
+			background: #b9b9b9
+			margin-right: 20px
+
+		i
+			margin-right: 20px
+			transition: all .3s
+
+		a
+			display: flex
+			align-items: center
+			&:hover
+				text-decoration: none
+				i
+					color: $text
+			&:focus
+				text-decoration: none
+				i
+					color: $text
 
 .header
 	&--page
@@ -485,6 +509,7 @@ iframe
 	width: 95%
 	margin-left: 5%
 	margin-bottom: 22px
+	border: none
 
 blockquote
 	position: relative

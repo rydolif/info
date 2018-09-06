@@ -29,13 +29,17 @@
 				</div>
 
 				<div class="header__block">
+					<a href="img/presentation.pdf" class="header__download link--foote" download>Скачать <br>презентацию 
+						<img src="img/icon/download.svg" alt="download" width="12" height="12">
+					</a>
 
-					<a href="img/presentation.pdf" class="header__download link" download>Скачать <br>презентацию <img src="img/icon/download.svg" alt="download" width="12" height="12"></a>
+					<button class="header__search header__search--button">
+						<i class="fas fa-times"></i>
+					</button>
 
-					<button class="header__search"></button>
-
-					<form action="sendmail.php" class="search-form">
-						<input type="text">
+					<form class="search-form">
+						<input type="text" placeholder="Поиск">
+						<button type="submit" class="header__search header__search--form" name="submit" value="отправить"></button>
 					</form>
 
 					<button class="hamburger" type="button">
@@ -52,10 +56,12 @@
 						<li><a href="sentence.html" class="link">Наше предложение</a></li>
 						<li><a href="contacts.html" class="link">Контакты</a></li>
 						<li><a href="projects.html" class="link">Реализованные проекты</a></li>
-						<li><a href="financing.html" class="link">Финансирование проектов</a></li>
+						<li><a href="articles.html" class="link">Финансирование проектов</a></li>
 						<li><a href="articles.html" class="link">Наши статьи</a></li>
+						<li><a href="articles.html" class="link">Правовая база</a></li>
+						<li><a href="articles.html" class="link">Технологии умных городов</a></li>
 					</ul>
-					<a href="img/presentation.pdf" class=" header--sentence__download header__download link" download>Скачать <br>презентацию <img src="img/icon/download.svg" alt="download" width="12" height="12"></a>
+					<a href="img/presentation.pdf" class=" header--sentence__download header__download" download>Скачать <br>презентацию <img src="img/icon/download.svg" alt="download" width="12" height="12"></a>
 				</nav>
 
 			</div>
@@ -85,7 +91,7 @@
 					<div class="col-xl-7">
 						<div class="circle">
 
-							<a href="#" class="circle__top">
+							<a href="sentence.html" class="circle__top">
 								<img src="img/circle-top.svg" width="565" height="260" alt="" class="off">
 								<img src="img/circle-top_active.svg" class="active" width="565" height="260" alt="">
 								<svg width="75" height="75"><use xlink:href="#top"></use></svg>
@@ -96,13 +102,13 @@
 								<div class="circle__center_center">
 									<img src="img/logo.svg" alt="img" width="160" height="160">
 								</div>
-								<a href="#" class="circle__center_left">
+								<a href="articles.html" class="circle__center_left">
 									<img src="img/circle-left.svg" alt="img" width="235" height="320">
 									<img src="img/circle-left_active.svg" alt="img" class="active" width="232" height="320">
 									<svg width="75" height="75"><use xlink:href="#left"></use></svg>
 									<span>Финансы <i class="fas fa-arrow-right"></i></span>
 								</a>
-								<a href="#" class="circle__center_right">
+								<a href="articles.html" class="circle__center_right">
 									<img src="img/circle-right.svg" alt="img" width="235" height="320">
 									<img src="img/circle-left_active.svg" alt="img" class="active" width="235" height="320">
 									<svg width="75" height="75"><use xlink:href="#right"></use></svg>
@@ -110,13 +116,41 @@
 								</a>
 							</div>
 
-							<a href="#" class="circle__bottom">	
+							<a href="articles.html" class="circle__bottom">	
 								<img src="img/circle-bottom.svg" alt="img" width="350" height="220" class="off">
 								<img src="img/circle-bottom_active.svg" alt="img" class="active" width="352" height="215">
 								<svg width="75" height="75"><use xlink:href="#bottom"></use></svg>
 								<span>Технологии <i class="fas fa-arrow-right"></i></span>
 							</a>
+						</div>
 
+						<div class="circle circle--resposive">
+
+							<a href="sentence.html" class="circle--resposive__top">
+								<img src="img/circle-top.svg" width="565" height="260" alt="" class="off">
+								<img src="img/circle-top_active.svg" class="active" width="565" height="260" alt="">
+								<svg width="75" height="75"><use xlink:href="#top"></use></svg>
+								<span>Наше предложение <i class="fas fa-arrow-right"></i></span>
+							</a>
+							<a href="articles.html" class="circle--resposive__center_left">
+								<img src="img/circle-left.svg" alt="img" width="235" height="320">
+								<img src="img/circle-left_active.svg" alt="img" class="active" width="232" height="320">
+								<svg width="75" height="75"><use xlink:href="#left"></use></svg>
+								<span>Финансы <i class="fas fa-arrow-right"></i></span>
+							</a>
+							<a href="articles.html" class="circle--resposive__center_right">
+								<img src="img/circle-right.svg" alt="img" width="235" height="320">
+								<img src="img/circle-left_active.svg" alt="img" class="active" width="235" height="320">
+								<svg width="75" height="75"><use xlink:href="#right"></use></svg>
+								<span>Правовая <br>база <i class="fas fa-arrow-right"></i></span>
+							</a>
+
+							<a href="articles.html" class="circle--resposive__bottom">	
+								<img src="img/circle-bottom.svg" alt="img" width="350" height="220" class="off">
+								<img src="img/circle-bottom_active.svg" alt="img" class="active" width="352" height="215">
+								<svg width="75" height="75"><use xlink:href="#bottom"></use></svg>
+								<span>Технологии <i class="fas fa-arrow-right"></i></span>
+							</a>
 						</div>
 					</div>
 

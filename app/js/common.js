@@ -3,7 +3,7 @@ $(function() {
 //------------------------------пошук-----------------------------
   $('.header__search').click(function() {
     $('.search-form').toggleClass('search-form--active');
-    $('.header__search').toggleClass('focus');
+    $('.header__search--button').toggleClass('focus');
   });
 
 //------------------------------гамбургер-----------------------------

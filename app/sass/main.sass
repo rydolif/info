@@ -26,6 +26,8 @@
 
 	&__container
 		position: relative
+		right: 0
+		left: 0
 		display: flex
 		flex-direction: row
 		justify-content: space-between
@@ -49,6 +51,7 @@
 
 	&__block
 		position: relative
+		right: 0
 		display: flex
 		flex-direction: row
 		align-items: center
@@ -73,6 +76,7 @@
 
 	&__search
 		position: relative
+		right: 0
 		display: block
 		border: 1px solid #434441
 		width: 60px
@@ -387,20 +391,26 @@
 			left: 16%
 
 .search-form
-	width: 0
+	position: absolute
+	display: none
+	transition: all .5s
+	animation: search-back .5s linear 1 forwards
 	opacity: 0
-	transition: all .3s
-	display: flex
 
 	input
 		width: 0
 		height: 55px
+		line-height: 55px
 		border: none
 		padding: 0 10px
+		&::placeholder
+			line-height: 55px
 
 	&--active
-		width: 200px
-		opacity: 1
+		animation: search .5s linear 1 forwards
+		transition: all .5s
+		position: relative
+		display: flex
 		input
 			width: 140px
 
